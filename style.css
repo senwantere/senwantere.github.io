@@ -12,7 +12,7 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .navbar{position:sticky;top:0;background:var(--white);border-bottom:1px solid #eee;z-index:10}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:72px}        /* + hauteur */
 .brand{display:flex;align-items:center;gap:12px}
-.logo{height:56px;width:auto;display:block}                                                          /* logo + grand */
+.logo{height:112px;width:auto;display:block}                                                          /* logo + grand */
 .brand-name{font-weight:700}
 .tagline{font-size:12px;color:var(--muted)}
 .nav-links{display:flex;gap:18px;align-items:center}
