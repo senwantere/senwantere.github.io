@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sen Wantère — Magasin discount</title>
+<meta name="description" content="Sen Wantère : invendus & surstocks de France, vendus à prix cassés au Sénégal. Nouveaux arrivages, stock limité.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="brand">
+      <img src="logo-placeholder.svg" alt="Logo Sen Wantère" class="logo">
+      <span class="brand-name">Sen Wantère</span>
+      <span class="tagline">Magasin discount</span>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#arrivages">Arrivages</a>
+      <a href="#categories">Catégories</a>
+      <a href="#comment-ca-marche">Comment ça marche</a>
+      <a href="#avis">Avis</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-wa" href="https://wa.me/221000000000?text=Bonjour%20Sen%20Want%C3%A8re%2C%20je%20veux%20commander" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+    </nav>
+    <button class="burger" aria-label="Menu" aria-expanded="false" onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>Les bonnes affaires de France, <span class="accent">au Sénégal</span>.</h1>
+      <p class="lead">Invendus • Surstocks • Retours marchandises — <strong>jusqu’à –70%</strong>.<br>Stock limité, nouveaux arrivages chaque semaine.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/221000000000?text=Bonjour%20Sen%20Want%C3%A8re%2C%20je%20veux%20r%C3%A9server%20un%20article" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+        <a class="btn btn-secondary" href="#arrivages">Voir les arrivages</a>
+      </div>
+      <ul class="trust">
+        <li>✔️ Prix cassés</li><li>✔️ Transparence sur l’état</li><li>✔️ Retrait en magasin à Dakar</li>
+      </ul>
+    </div>
+
+    <div class="hero-card">
+      <div class="card">
+        <div class="card-head">Deal du jour</div>
+        <div class="card-body">
+          <div class="product">
+            <div class="product-img placeholder"></div>
+            <div class="product-info">
+              <h3>Mixeur KitchenPro 500W</h3>
+              <div class="prices"><span class="price">12 500 CFA</span> <span class="was">au lieu de 29 900 CFA</span></div>
+              <p class="stock">Stock restant : 14 pièces</p>
+              <a class="btn btn-outline" href="https://wa.me/221000000000?text=Je%20veux%20r%C3%A9server%20le%20Mixeur%20500W" target="_blank" rel="noopener">Réserver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="note">Exemple visuel — remplace par tes produits du moment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="arrivages" class="arrivages">
+  <div class="container">
+    <h2>Arrivages récents</h2>
+    <div class="grid">
+      <article class="tile">
+        <div class="ph-img"></div>
+        <h3>Robot pâtissier</h3>
+        <div class="prices"><span class="price">39 000 CFA</span><span class="was">79 000 CFA</span></div>
+        <a class="btn btn-outline" href="https://wa.me/221000000000?text=Je%20veux%20le%20robot%20p%C3%A2tissier" target="_blank" rel="noopener">Réserver</a>
+      </article>
+      <article class="tile">
+        <div class="ph-img"></div>
+        <h3>Coffret jouets</h3>
+        <div class="prices"><span class="price">7 500 CFA</span><span class="was">15 900 CFA</span></div>
+        <a class="btn btn-outline" href="https://wa.me/221000000000?text=Je%20veux%20le%20coffret%20jouets" target="_blank" rel="noopener">Réserver</a>
+      </article>
+      <article class="tile">
+        <div class="ph-img"></div>
+        <h3>Plaids & coussins</h3>
+        <div class="prices"><span class="price">4 900 CFA</span><span class="was">9 900 CFA</span></div>
+        <a class="btn btn-outline" href="https://wa.me/221000000000?text=Je%20veux%20les%20plaids%20et%20coussins" target="_blank" rel="noopener">Réserver</a>
+      </article>
+    </div>
+    <p class="hint">Astuce : mets ici chaque semaine 6–9 produits “phares” et renvoie vers WhatsApp pour réserver.</p>
+  </div>
+</section>
+
+<section id="categories" class="categories">
+  <div class="container">
+    <h2>Catégories</h2>
+    <div class="cat-grid">
+      <div class="cat-card">Mode & Vêtements</div>
+      <div class="cat-card">Maison & Décoration</div>
+      <div class="cat-card">Cuisine & Art de la table</div>
+      <div class="cat-card">Enfant & Bébé</div>
+      <div class="cat-card">Mobilier & Jardin</div>
+      <div class="cat-card">High-Tech & Divers</div>
+    </div>
+  </div>
+</section>
+
+<section id="comment-ca-marche" class="how">
+  <div class="container">
+    <h2>Comment ça marche</h2>
+    <ol class="steps">
+      <li><strong>Collecte en France</strong> d’invendus, retours, fins de séries.</li>
+      <li><strong>Expédition</strong> par conteneur jusqu’à Dakar.</li>
+      <li><strong>Mise en rayon</strong> + publication sur nos réseaux.</li>
+      <li><strong>Commande</strong> par WhatsApp et retrait en magasin.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="avis" class="avis">
+  <div class="container">
+    <h2>Ils recommandent Sen Wantère</h2>
+    <div class="quotes">
+      <blockquote>“J’ai payé moitié prix pour un mixeur neuf ! Top.” — Aïda</blockquote>
+      <blockquote>“Arrivages réguliers, ça part vite. Abonnez-vous.” — Moussa</blockquote>
+      <blockquote>“Clair sur l’état des produits, bon service.” — Khady</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Les produits sont-ils neufs ?</summary>
+      <p>Majoritairement neufs (invendus, surstocks). Certains articles peuvent être des retours clients ou présenter un défaut mineur — c’est toujours indiqué.</p>
+    </details>
+    <details>
+      <summary>Comment commander ?</summary>
+      <p>Via WhatsApp (bouton vert). On confirme la disponibilité et on réserve jusqu’à votre passage.</p>
+    </details>
+    <details>
+      <summary>Modes de paiement</summary>
+      <p>Espèces, Orange Money, Wave, Free Money.</p>
+    </details>
+    <details>
+      <summary>Adresse & horaires</summary>
+      <p>📍 Dakar — [Votre adresse]<br>🕘 Lun–Sam : 9h–20h</p>
+    </details>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <h3>Sen Wantère</h3>
+      <p>Les bonnes affaires de France, au Sénégal.</p>
+      <a class="btn btn-wa" href="https://wa.me/221000000000?text=Bonjour%20Sen%20Want%C3%A8re" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div>
+      <h4>Suivre</h4>
+      <ul class="links">
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Snapchat</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Légal</h4>
+      <ul class="links">
+        <li><a href="#">Conditions générales</a></li>
+        <li><a href="#">Politique de retours</a></li>
+        <li><a href="#">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">© <span id="year"></span> Sen Wantère — Tous droits réservés.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
