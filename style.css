@@ -10,9 +10,9 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 
 /* Nav */
 .navbar{position:sticky;top:0;background:var(--white);border-bottom:1px solid #eee;z-index:10}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
-.brand{display:flex;align-items:center;gap:10px}
-.logo{width:36px;height:36px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;height:72px}        /* + hauteur */
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:56px;width:auto;display:block}                                                          /* logo + grand */
 .brand-name{font-weight:700}
 .tagline{font-size:12px;color:var(--muted)}
 .nav-links{display:flex;gap:18px;align-items:center}
@@ -38,7 +38,10 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .card-head{background:var(--green);color:var(--white);padding:10px 14px;font-weight:700}
 .card-body{padding:14px}
 .product{display:flex;gap:14px;align-items:center}
-.product-img.placeholder{width:120px;height:120px;background:#e3e3e3;border-radius:12px}
+
+/* images produits */
+.product-img{width:120px;height:120px;object-fit:cover;border-radius:12px;display:block}            /* hero card */
+.product-img.placeholder{background:#e3e3e3}
 .product-info h3{margin:.2rem 0}
 .prices{display:flex;gap:10px;align-items:baseline}
 .price{font-size:20px;font-weight:800;color:var(--green)}
@@ -50,7 +53,9 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,
 .arrivages h2,.categories h2,.how h2,.avis h2,.faq h2{font-family:Poppins,Inter,sans-serif}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .tile{background:var(--white);border:1px solid #eee;border-radius:12px;padding:14px}
-.ph-img{height:160px;background:#eaeaea;border-radius:10px;margin-bottom:8px}
+
+/* remplace l'ancien placeholder par un vrai <img> stylé */
+.product-image{width:100%;height:180px;object-fit:cover;border-radius:10px;display:block;margin-bottom:8px}
 
 .categories{padding:40px 0;background:var(--white);border-top:1px solid #eee;border-bottom:1px solid #eee}
 .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -81,10 +86,12 @@ summary{font-weight:700;cursor:pointer}
   .hero-inner{grid-template-columns:1fr}
   .grid,.cat-grid,.quotes,.steps{grid-template-columns:1fr 1fr}
   .foot-grid{grid-template-columns:1fr}
+  .logo{height:48px}                                                                              /* un peu plus petit */
 }
 @media (max-width: 640px){
   .grid,.cat-grid,.quotes,.steps{grid-template-columns:1fr}
-  .nav-links{display:none;position:absolute;right:20px;top:64px;background:#fff;border:1px solid #eee;border-radius:10px;padding:10px;flex-direction:column;gap:10px}
+  .nav-links{display:none;position:absolute;right:20px;top:72px;background:#fff;border:1px solid #eee;border-radius:10px;padding:10px;flex-direction:column;gap:10px}
   .nav-links.open{display:flex}
   .burger{display:block}
+  .logo{height:44px}                                                                              /* mobile */
 }
